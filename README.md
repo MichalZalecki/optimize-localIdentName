@@ -4,7 +4,7 @@ Project created to experiment how `localIdentName` setting for [css-loader](http
 
 |                 | default [hash:base64]    | [hash:base64:12] | [name]-[hash:base64:5] | [local]-[hash:base64:5] |
 |-----------------|--------------------------|------------------|------------------------|-------------------------|
-| css + js        | 327 (78 + 249)           | 308 (68 + 240)   | 300 (64 + 236)         | 300 (79 + 251)          |
+| css + js        | 327 (78 + 249)           | 308 (68 + 240)   | 300 (64 + 236)         | 330 (79 + 251)          |
 | css + js (gzip) | 107 (28 + 79)            | 91 (20 + 71)     | 81 (15 + 66)           | 92 (23 + 69)            |
 
 Those results poof only that `localIdentName` has significant influence on the build size, not that `[name]-[hash:base64:5]` is the best config. Experiment with your project and test the outcome.
